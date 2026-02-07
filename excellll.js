@@ -135,7 +135,7 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             var that = this;
 
-            let xlsxjs = "https://sacplanning2025.github.io/hr_widget/xlsxxx.js";
+            let xlsxjs = "https://sacplanning2025.github.io/route_widget/xlsxxxx.js";
             async function LoadLibs() {
                 try {
                     await loadScript(xlsxjs, _shadowRoot);
@@ -220,7 +220,7 @@
         }
 
     }
-    customElements.define("com-fd-djaja-sap-sac-excelll", Excel);
+    customElements.define("com-fd-arnav-sap-sac-excellll", Excel);
 
     // UTILS
     function loadthis(that, changedProperties) {
@@ -344,7 +344,7 @@
                                 var lengthfield = result.split("[$@~!~@$]")[0].split("[#@~!~@#]").length;
                                 console.log("lengthfield: " + lengthfield);
                             
-                                if (lengthfield >= 9) {
+                                if (lengthfield >= 5) {
                               result_final = [];
                                         for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
                     
@@ -354,18 +354,14 @@
                     
                                         if (
                                             rec[0] || rec[1] || rec[2] || rec[3] ||
-                                            rec[4] || rec[5] || rec[6] || rec[7] || rec[8]
+                                            rec[4]
                                         ) {
                                             result_final.push({
                                                 ID: (rec[0] || "").trim(),
                                                 DESCRIPTION: (rec[1] || "").trim(),
-                                                H1: (rec[2] || "").trim(),
-                                                Company_Code: (rec[3] || "").trim(),
-                                                Costcenter: (rec[4] || "").trim(),
-                                                Position: (rec[5] || "").trim(),
-                                                Grade: (rec[6] || "").trim(),
-                                                Hire_Month: (rec[7] || "").trim(),
-                                                Nationality: (rec[8] || "").trim()
+                                                ROUTE_FROM: (rec[2] || "").trim(),
+                                                ROUTE_TO: (rec[3] || "").trim(),
+                                                EFDATE: (rec[4] || "").trim()
                                             });
                                         }
                                     }
