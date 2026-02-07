@@ -1,5 +1,5 @@
 {
-  "id": "com.fd.arnav.sap.sac.excelll",
+  "id": "com.fd.arnav.sap.sac.excellll",
   "version": "7.0.3",
   "name": "routeupload",
   "description": "routeupload",
@@ -12,14 +12,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com-fd-arnav-sap-sac-excelll",
+      "tag": "com-fd-arnav-sap-sac-excellll",
       "url": "https://sacplanning2025.github.io/route_widget/excellll.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
-      "tag": "com-fd-arnav-sap-sac-excelll-aps",
+      "tag": "com-fd-arnav-sap-sac-excellll-aps",
       "url": "https://sacplanning2025.github.io/route_widget/aps_excellll.js",
       "integrity": "",
       "ignoreIntegrity": true
